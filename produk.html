@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MENU</title>
     <link rel="stylesheet" href="base.css" />
 
     <!-- Font Awesome (Ikon sosmed)-->
@@ -12,7 +12,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -26,7 +27,7 @@
           <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="produk.html">MENU</a></li>
-            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
           </ul>
         </div>
 
@@ -42,13 +43,18 @@
         <h3>SEANDAINYA</h3>
         <a href="index.html">HOME</a>
         <a href="produk.html">MENU</a>
-        <a href="index.html">ABOUT</a>
+        <a href="about.html4">ABOUT</a>
+        <h3>MENU KAMI</h3>
+        <a href="#coffee">coffee</a>
+        <a href="#bottled">bottled coffee</a>
+        <a href="#snacks">snacks</a>
+
       </div>
       <!-- HUMBERGER END -->
     </header>
 
     <main>
-      <img class="video" src="aset/menu promo.png" id="targetH" \>
+      <img class="video" src="aset/menu promo.png" id="targetH" />
 
       <section class="menu-page-header">
         <h1>MENU KAMI</h1>
@@ -57,54 +63,67 @@
       </section>
 
       <section class="menu-category">
-        <h2 class="menu-category-title">COFFEE-BASED DRINKS</h2>
+        <h2 class="menu-category-title" id="coffee">COFFEE-BASED DRINKS</h2>
         <div class="menu-category-underline"></div>
         <p class="menu-category-desc">
-          Kopi Seandainya menyediakan berbagai varian minuman berbasis kopi untuk semua kalangan,
-          dari yang klasik sampai yang modern, dengan harga yang tetap terjangkau.
+          Kopi Seandainya menyediakan berbagai varian minuman berbasis kopi
+          untuk semua kalangan, dari yang klasik sampai yang modern, dengan
+          harga yang tetap terjangkau.
         </p>
-
+        
+        
         <div class="menu-subcards reveal">
-          <div class="menu-subcard">
-            <img src="aset/menu kopi.jpeg" alt="Kopi Susu" />
-            <div class="menu-subcard-content">
-              <h3>Kopi Susu</h3>
-              <p>Kopi Gula Aren &middot; Kopi Susu Original &middot; Kopi Susu Vanilla</p>
-            </div>
+        <div class="menu-subcard">
+          <img src="aset/americano-iced.jpeg" alt="Kopi Hitam" />
+          <div class="menu-subcard-content">
+            <h3>Kopi Hitam</h3>
+            <p>Americano &middot; Kopi Tubruk &middot; Espresso</p>
           </div>
-
-          <div class="menu-subcard">
-            <img src="aset/americano-iced.jpeg" alt="Kopi Hitam" />
-            <div class="menu-subcard-content">
-              <h3>Kopi Hitam</h3>
-              <p>Americano &middot; Kopi Tubruk &middot; Espresso</p>
-            </div>
-          </div>
+        </div>
 
           <div class="menu-subcard">
             <img src="aset/menu kopi.jpeg" alt="Kopi Susu" />
             <div class="menu-subcard-content">
-              <h3>Kopi Susu</h3>
-              <p>Salted Caramel &middot; Kopi Susu Original &middot; Kopi Susu Vanilla</p>
+              <h3>Gula Aren</h3>
+              <p>
+                Kopi Gula Aren &middot; Kopi Susu Original &middot; Kopi Susu
+                Vanilla
+              </p>
+            </div>
+          </div>
+          
+
+          <div class="menu-subcard">
+            <img src="aset/menu kopi.jpeg" alt="Kopi Susu" />
+            <div class="menu-subcard-content">
+              <h3>Salted Caramel</h3>
+              <p>
+                Salted Caramel &middot; Kopi Susu Original &middot; Kopi Susu
+                Vanilla
+              </p>
             </div>
           </div>
 
           <div class="menu-subcard">
             <img src="aset/menu kopi.jpeg" alt="Kopi Susu" />
             <div class="menu-subcard-content">
-              <h3>Kopi Susu</h3>
-              <p>Salted Caramel &middot; Kopi Susu Original &middot; Kopi Susu Vanilla</p>
+              <h3>Tiramisu </h3>
+              <p>
+                Salted Caramel &middot; Kopi Susu Original &middot; Kopi Susu
+                Vanilla
+              </p>
             </div>
           </div>
         </div>
 
-        <h2 class="menu-category-title">BOTTLED-COFFEE</h2>
-          <div class="menu-category-underline"></div>
-          <p class="menu-category-desc">
-            Kopi Seandainya menghadirkan varian botol yang tentunya aman untuk perjalanan jauh anda.
-          </p>
-        
-        <div class="menu-subcards">
+        <h2 class="menu-category-title" id="bottled">BOTTLED-COFFEE</h2>
+        <div class="menu-category-underline"></div>
+        <p class="menu-category-desc">
+          Kopi Seandainya menghadirkan varian botol yang tentunya aman untuk
+          perjalanan jauh anda.
+        </p>
+
+        <div class="menu-subcards reveal">
           <div class="menu-subcard">
             <img src="aset/kopi-botol.jpeg" alt="Kopi Susu" />
             <div class="menu-subcard-content">
@@ -121,11 +140,52 @@
             </div>
           </div>
         </div>
+        
+        <!-- SNACKS -->
+        <h2 class="menu-category-title" id="snacks" reveal>SNACKS</h2>
+        <div class="menu-category-underline"></div>
+        <p class="menu-category-desc">
+          Cemilan yang hangat dan manis. Cocok untuk menemani kopi seandainya.
+        </p>
+
+        <div class="menu-subcards reveal">
+          <div class="menu-subcard-">
+            <img src="aset/cookiesO.jpeg" alt="Kopi Susu" />
+            <div class="menu-subcard-content">
+              <h3>COOKIES ORIGINAL</h3>
+              <p>Original Chocolate chip</p>
+            </div>
+          </div>
+
+          <div class="menu-subcard-">
+            <img src="aset/cookiesC.jpeg" alt="Kopi Susu" />
+            <div class="menu-subcard-content">
+              <h3>COOKIES COCHOLATE</h3>
+              <p>Double Chocolate lava</p>
+            </div>
+          </div>
+
+          <div class="menu-subcard-">
+            <img src="aset/cookiesM.jpeg" alt="Kopi Susu" />
+            <div class="menu-subcard-content">
+              <h3>COOKIES MARSHMALLOW</h3>
+              <p>Smores Lava </p>
+            </div>
+          </div>
+
+          <div class="menu-subcard-">
+            <img src="aset/cookiesB.jpeg" alt="Kopi Susu" />
+            <div class="menu-subcard-content">
+              <h3>COOKIES BISCOF</h3>
+              <p>Lotus Biscoff lava</p>
+            </div>
+          </div>
+
+        </div>
       </section>
     </main>
-    
 
-      <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="site-footer block block-dark">
       <div class="block-inner">
         <div class="footer-top">
@@ -152,8 +212,7 @@
 
           <div class="footer-col">
             <h4>Lokasi</h4>
-            <a href="#" style="pointer-events: none">Jl.Percetakan Negara</a
-            >
+            <a href="#" style="pointer-events: none">Jl.Percetakan Negara</a>
           </div>
         </div>
 
@@ -162,17 +221,16 @@
         <div class="footer-bottom">
           <p>&copy; 2026 Kopi Seandainya. All rights reserved.</p>
           <div class="footer-socials">
-            <a href="#">
-              <i class="fa-regular fa-envelope"></i>
-            </a>
             <a href="https://www.instagram.com/kedai_seandainya/">
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="#">
               <i class="fa-brands fa-tiktok"></i>
             </a>
+            <a href="#">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
           </div>
-
         </div>
       </div>
     </footer>
@@ -181,4 +239,3 @@
     <script src="style.js"></script>
   </body>
 </html>
- 

@@ -5,12 +5,82 @@ ANDA TIDAK MENGHARGAI SESAMA DEVELOPER
 
 !!!!!!!!!! */
 
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* google font */
 
 :root {
   --nav-height: 105px;
+  --dark-text: #ab847f;
+  --light-text: #e2b2a2;
+  --gradient: linear-gradient(to bottom, #9973aa, #ba708b);
+  --bg: #2c1442;
 }
+
+/* =========================================  ABOUT  ======================================================= */
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container img {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  bottom: 0;
+}
+
+#one {
+  z-index: 6;
+}
+
+#two {
+  z-index: 5;
+}
+
+#three {
+  z-index: 4;
+}
+
+#four {
+  z-index: 3;
+}
+
+#five {
+  z-index: 2;
+}
+
+.main {
+  margin-top: 0;
+  background: #f9f3ff;
+  padding-top: 80px;
+}
+
+.main section {
+  width: 80%;
+  margin: auto;
+}
+
+.main section h2 {
+  color: black;
+  font-size: 2rem;
+}
+
+.main section p {
+  color: black;
+}
+
+.main section .site-footer {
+  background: #262329;
+  color: white;
+}
+
+.main section .site-footer p {
+  color: white;
+}
+
+/* ===========================================  ABOUT END  ======================================================= */
 
 /* BUKU MENU PAGE */
 .menu-page-header {
@@ -19,14 +89,14 @@ ANDA TIDAK MENGHARGAI SESAMA DEVELOPER
   padding-bottom: 0;
   font-family: "poppins";
 }
- 
+
 .menu-page-header h1 {
   font-size: 2.4em;
   font-weight: 800;
   color: #1a1a1a;
   margin-bottom: 18px;
 }
- 
+
 .menu-page-header-underline {
   width: 70px;
   height: 5px;
@@ -34,18 +104,17 @@ ANDA TIDAK MENGHARGAI SESAMA DEVELOPER
   margin: 0 auto 18px;
   border-radius: 2px;
 }
- 
+
 .menu-page-header p {
   color: #777;
   font-size: 1em;
 }
- 
+
 .menu-category {
   padding: 60px 5%;
   font-family: "poppins";
 }
 
- 
 .menu-category-title {
   font-size: 1.9em;
   font-weight: 700;
@@ -54,20 +123,20 @@ ANDA TIDAK MENGHARGAI SESAMA DEVELOPER
   margin-bottom: 20px;
   margin-top: 50px;
 }
- 
+
 .menu-category-desc {
   color: #777;
   line-height: 1.7;
   max-width: 900px;
   margin-bottom: 50px;
 }
- 
+
 .menu-subcards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 45px;
 }
- 
+
 .menu-subcard {
   background-color: #f5f4f2;
   border-radius: 8px;
@@ -76,7 +145,7 @@ ANDA TIDAK MENGHARGAI SESAMA DEVELOPER
   align-items: center;
   gap: 25px;
 }
- 
+
 .menu-subcard img {
   width: 150px;
   height: 150px;
@@ -86,7 +155,7 @@ ANDA TIDAK MENGHARGAI SESAMA DEVELOPER
   flex-shrink: 0;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
- 
+
 .menu-subcard-content h3 {
   font-size: 0.95em;
   font-weight: 700;
@@ -95,33 +164,45 @@ ANDA TIDAK MENGHARGAI SESAMA DEVELOPER
   margin-bottom: 14px;
   color: #333;
 }
- 
+
 .menu-subcard-content p {
   font-size: 0.9em;
   color: #666;
   line-height: 1.7;
 }
 
-@media (max-width: 768px) {
-  .menu-subcards {
-    grid-template-columns: 1fr;
-  }
-  .menu-subcard {
-    flex-direction: column;
-    padding: 40px 25px 25px;
-    text-align: center;
-  }
-  .menu-subcard img {
-    margin-left: 0;
-    margin-top: -55px;
-  }
+/* ===============
+    CEMILAN
+   =============== */
+.menu-subcard- {
+  background-color: #f5f4f2;
+  border-radius: 8px;
+  padding: 30px 30px 30px 55px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
+
+.menu-subcard- img {
+  width: 180px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: -80px;
+  flex-shrink: 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+/* ===============
+    CEMILAN END
+   =============== */
 
 /* ANIMASI SHARED */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .reveal.visible {
@@ -129,7 +210,6 @@ ANDA TIDAK MENGHARGAI SESAMA DEVELOPER
   transform: translateY(0);
 }
 /* ANIMASI END*/
-
 
 /* ------------------------------------------------------ HOME CSS -------------------------------------------------------------- */
 
@@ -154,7 +234,7 @@ span {
 nav {
   font-family: "poppins";
   position: fixed;
-  z-index: 3;
+  z-index: 999;
   top: 0;
   left: 0;
   right: 0;
@@ -189,6 +269,10 @@ nav.scrolled .image span {
   top: 0;
   left: -250px;
 }
+.sidebar.active {
+  left: 0;
+}
+
 
 .image {
   display: flex;
@@ -247,7 +331,7 @@ a::after {
   left: 50%;
   bottom: -6px;
   width: 0;
-  height: 3px;
+  height: 2px;
   background-color: #fff;
   transform: translateX(-50%);
   transition: width 0.3s ease;
@@ -347,14 +431,15 @@ main {
 }
 /* MENU END */
 
-
 /* HERO SPLIT */
 .hero-split {
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  width: 90%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 150px;
+  gap: 200px;
   padding: 100px 5%;
   font-family: "poppins";
 }
@@ -457,13 +542,12 @@ main {
 }
 /* BLOCK SECTION END */
 
-
 /* FOOTER */
 .site-footer {
   color: #fff;
 }
 
-.site-footer .block-inner{
+.site-footer .block-inner {
   text-align: left;
 }
 
@@ -576,10 +660,24 @@ main {
 }
 
 @media (max-width: 768px) {
+
+   .menu-subcards {
+    grid-template-columns: 1fr;
+  }
+  .menu-subcard {
+    flex-direction: column;
+    padding: 40px 25px 25px;
+    text-align: center;
+  }
+  .menu-subcard img {
+    margin-left: 0;
+    margin-top: -55px;
+  }
+
   .sidebar {
     font-family: "poppins";
     position: fixed;
-    z-index: 2;
+    z-index: 998;
     top: 0;
     left: -250px;
     width: 250px;
@@ -590,7 +688,9 @@ main {
     padding-top: 60px;
     transition: 0.4s;
   }
-
+  .sidebar.active {
+    left: 0;
+  }
   .sidebar h3 {
     display: block;
     padding: 0px 20px;
@@ -610,10 +710,10 @@ main {
   a::after {
     content: "";
     position: absolute;
-    /* left: 50%; */
+    left: 50%;
     bottom: -6px;
     width: 0;
-    height: 3px;
+    height: 2px;
     background-color: white;
     transform: translateX(-50%);
     transition: width 0.3s ease;
@@ -624,14 +724,14 @@ main {
   }
 
   .menu-btn {
-    width: 35px;
+    width: 30px;
     display: block;
     cursor: pointer;
   }
 
   .menu-btn span {
     display: block;
-    height: 3px;
+    height: 2px;
     width: 100%;
     background: #fff;
     margin: 6px 0;
