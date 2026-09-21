@@ -49,6 +49,7 @@ document.addEventListener("scroll", () => {
 // SEANDAINYA V2
 const body = document.body
 const menu = document.querySelector("#menu")
+menu.style.marginTop = "130px"
 const menuKopi = [
   {
     nama : "Tiramisu",
@@ -69,8 +70,12 @@ const menuKopi = [
 ]
 menuKopi.forEach((item)=>{
   const menuItem = document.createElement("li")
-  menuItem.textContent = `${item.nama} - Rp${item.harga}`
-  menu.style.marginTop = "130px"
+  const tombol = document.createElement("button")
+  tombol.style.padding = "5px 5px"
+  tombol.textContent = "+"
+  menuItem.textContent = item.nama + " - Rp" + item.harga
+
+  menuItem.append(tombol)
   menu.append(menuItem)
   
   console.log(item)
