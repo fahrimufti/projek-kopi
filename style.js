@@ -44,3 +44,40 @@ document.addEventListener("scroll", () => {
   four.style.bottom = -value * 0.6 + "px";
 });
 // animasi gambar end
+
+
+// SEANDAINYA V2
+const menu = [
+  {
+    nama : "Tiramisu",
+    harga: 10000
+  },
+  {
+    nama : "Salted Caramel",
+    harga: 10000
+  },
+  {
+    nama : "Kopi Hitam",
+    harga: 10000
+  },
+  {
+    nama : "Gula Aren",
+    harga: 10000
+  },
+  {
+    nama : "Cookies Original",
+    harga: 15000
+  },
+  {
+    nama : "Cookies Chocolate",
+    harga: 15000
+  },
+  {
+    nama : "Cookies Marshmallow",
+    harga: 15000
+  },
+  {
+    nama : "Cookies Biskof",
+    harga: 15000
+  }
+]

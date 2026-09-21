@@ -147,7 +147,7 @@ ANDA TIDAK MENGHARGAI SESAMA DEVELOPER
 }
 
 .menu-subcard img {
-  width: 150px;
+  width: 200px;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
@@ -171,30 +171,6 @@ ANDA TIDAK MENGHARGAI SESAMA DEVELOPER
   line-height: 1.7;
 }
 
-/* ===============
-    CEMILAN
-   =============== */
-.menu-subcard- {
-  background-color: #f5f4f2;
-  border-radius: 8px;
-  padding: 30px 30px 30px 55px;
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.menu-subcard- img {
-  width: 180px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-left: -80px;
-  flex-shrink: 0;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-/* ===============
-    CEMILAN END
-   =============== */
 
 /* ANIMASI SHARED */
 .reveal {
