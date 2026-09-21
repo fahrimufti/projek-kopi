@@ -47,7 +47,9 @@ document.addEventListener("scroll", () => {
 
 
 // SEANDAINYA V2
-const menu = [
+const body = document.body
+const menu = document.querySelector("#menu")
+const menuKopi = [
   {
     nama : "Tiramisu",
     harga: 10000
@@ -63,21 +65,13 @@ const menu = [
   {
     nama : "Gula Aren",
     harga: 10000
-  },
-  {
-    nama : "Cookies Original",
-    harga: 15000
-  },
-  {
-    nama : "Cookies Chocolate",
-    harga: 15000
-  },
-  {
-    nama : "Cookies Marshmallow",
-    harga: 15000
-  },
-  {
-    nama : "Cookies Biskof",
-    harga: 15000
   }
 ]
+menuKopi.forEach((item)=>{
+  const menuItem = document.createElement("li")
+  menuItem.textContent = `${item.nama} - Rp${item.harga}`
+  menu.style.marginTop = "130px"
+  menu.append(menuItem)
+  
+  console.log(item)
+})
