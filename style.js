@@ -49,7 +49,7 @@ document.addEventListener("scroll", () => {
 // SEANDAINYA V2
 const body = document.body
 const menu = document.querySelector("#menu")
-menu.style.marginTop = "130px"
+menu.style.marginTop = "30px"
 const menuKopi = [
   {
     nama : "Tiramisu",
@@ -68,6 +68,23 @@ const menuKopi = [
     harga: 10000
   }
 ]
+
+
+const cari = document.querySelector("#search")
+const hasil = document.querySelector("#hasil")
+cari.style.marginTop = "110px"
+console.log(cari)
+
+cari.addEventListener("input",()=>{
+  const keyword = cari.value.toLowerCase()
+  const varian = menuKopi.filter((item)=>{
+    return item.nama.toLowerCase().includes(keyword)
+  })
+  hasil.textContent = varian
+  console.log(varian)
+})
+
+// ================================================================
 menuKopi.forEach((item)=>{
   const menuItem = document.createElement("li")
   const tombol = document.createElement("button")
