@@ -50,6 +50,7 @@ document.addEventListener("scroll", () => {
 const body = document.body
 const menu = document.querySelector("#menu")
 menu.style.marginTop = "30px"
+
 const menuKopi = [
   {
     nama : "Tiramisu",
@@ -69,7 +70,6 @@ const menuKopi = [
   }
 ]
 
-
 const cari = document.querySelector("#search")
 const hasil = document.querySelector("#hasil")
 cari.style.marginTop = "110px"
@@ -77,23 +77,28 @@ console.log(cari)
 
 cari.addEventListener("input",()=>{
   const keyword = cari.value.toLowerCase()
+
   const varian = menuKopi.filter((item)=>{
+    menu.textContent = ""
     return item.nama.toLowerCase().includes(keyword)
   })
-  hasil.textContent = varian
+
+  const namaVarian = varian.map((item)=>{
+    return item.nama
+  })
+  
+  varian.forEach((item)=>{
+    const menuItem = document.createElement("li")
+    const tombol = document.createElement("button")
+    tombol.style.padding = "5px 5px"
+    tombol.textContent = "+"
+    menuItem.textContent = item.nama + " - Rp" + item.harga
+    
+    menuItem.append(tombol)
+    menu.append(menuItem)
+    console.log(item)
+  })
+  hasil.textContent = namaVarian
   console.log(varian)
 })
 
-// ================================================================
-menuKopi.forEach((item)=>{
-  const menuItem = document.createElement("li")
-  const tombol = document.createElement("button")
-  tombol.style.padding = "5px 5px"
-  tombol.textContent = "+"
-  menuItem.textContent = item.nama + " - Rp" + item.harga
-
-  menuItem.append(tombol)
-  menu.append(menuItem)
-  
-  console.log(item)
-})
